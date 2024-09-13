@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title >Happy Birthday Dad</title>
+<link href="birthday.css" rel="stylesheet"> 
+</head>
+<body>
+  <div class="head"><h1>Happy Birthday, Dad!</h1></div>
+  <p>Wishing you a wonderful day filled with love, laughter, and all your favorite things!</p>
+  
+  <!-- Add a personal message -->
+  <p>Dear Dad,
+
+    Happy Birthday! Today, I celebrate not just your life but all the love, wisdom, and strength you've shared with me over the years. You've been my greatest role model and supporter, and I can't thank you enough for everything you've done.
+    
+    I hope this day brings you as much joy as you have brought to all of us. Here's to many more years of happiness and cherished memories together. I love you, Dad!
+    
+    With all my love,  
+    [Your Son]</p>
+  
+  <!-- Add a photo -->
+ <div class="center"><img src="dd1.jpg" width="250px" height="300px"></div> 
+  
+  <!-- Add a slideshow of photos -->
+  <h2>Memories with Dad:</h2>
+  <div  class="center" id="slideshow">
+    <img src= "dd2.jpg">
+    <img src="dd4.jpg">
+    <img src= "dd5.jpg">
+    <img src="dd6.jpg">
+  </div>
+  <script>
+    // Add a slideshow effect
+    var slideshow = document.getElementById("slideshow");
+    var images = slideshow.getElementsByTagName("img");
+    var currentImage = 0;
+    
+    function nextImage() {
+      images[currentImage].style.display = "none";
+      currentImage = (currentImage + 1) % images.length;
+      images[currentImage].style.display = "block";
+    }
+    
+    // Update the slideshow every 3 seconds
+    setInterval(nextImage, 3000);
+  </script>
+  
+  
+  </script>
+</body>
+</html>
